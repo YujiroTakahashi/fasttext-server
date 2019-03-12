@@ -53,7 +53,6 @@ std::string _sentence(http::Request &req)
     ftext.getSentenceVector(ioss, vec);
 
     std::stringstream os;
-//    os << std::setprecision(5);
     os << "\"";
 
     int64_t idx, loop = vec.size() -1;
@@ -85,7 +84,6 @@ std::string _word(http::Request &req)
     ftext.getWordVector(vec, text);
 
     std::stringstream os;
-    os << std::setprecision(5);
     os << "\"";
 
     int64_t idx, loop = vec.size() -1;
